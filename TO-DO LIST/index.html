@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(234, 221, 205);
+        }
+        #addTask{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        #addTask input:first-of-type {
+            width: 300px;
+            padding: 7px;
+            border-radius: 15px;
+        }
+        #addTask input {
+            padding: 7px;
+            border-radius: 15px;
+        }
+        #addTask button{
+            background-color: rgb(228, 225, 122);
+            border: 1px solid black;
+            border-radius: 20px;
+            font-size: 14px;
+            padding: 10px;
+            width: 100px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        #addTask button:hover{
+            background-color: black;
+            color: rgb(228, 225, 122);
+            transform: scale(1.1);
+        }
+
+        #todos{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
+        .todo{
+            width: 300px;
+            background-color: rgb(155, 240, 178);
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 3px solid black;
+            border-radius: 6px;
+            text-align: center;
+            align-content: center;
+            margin: 10px;
+            padding: 10px 5px;
+            font: bold;
+        }
+
+        .options{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="addTask">
+        <input placeholder="Task" id="input" required>
+        <input type="date" id="date" required>
+        <button onClick="addTodo();">Add Task</button>
+    </div>
+    <div id="todos">
+        <!-- <div class="todo">
+            <p>Demo</p> 
+            <p>Date: 21-10-2021</p> 
+            <div class="options">
+                <select id="status">
+                    <option value="pending">Pending</option>
+                    <option value="pending">Done</option>
+                </select>
+                <button onClick="deleteTodo();">Delete</button> 
+                <button onClick="updateTodo();">Update</button>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+    
+</body>
+</html>
